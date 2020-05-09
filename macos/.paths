@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Load rbenv automatically
+eval "$(rbenv init -)"
+
+# add volta
+export VOLTA_HOME="$HOME/.volta"
+
+# add volta npm bins and composer to $PATH
+export PATH="$VOLTA_HOME/bin:$HOME/.composer/vendor/bin:$PATH"

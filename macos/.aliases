@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Lock the screen (when going AFK)
+alias afk="pmset displaysleepnow"
